@@ -5,23 +5,16 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>form_example</title>
-    <script type="module" crossorigin src="./index.js"></script>
-    <link rel="stylesheet" href="./index.css">
+    <script type="module" crossorigin src="/index.js"></script>
+    <link rel="stylesheet" href="/index.css">
   </head>
   <body>
     <script  src="https://stg.static.mul-pay.jp/ext/js/token.js" ></script>
-    <div 
-      id="eccube-form"
-      baitai_code="WEBA000266"
-      product_code="26209842"
-      product_name="ヒト幹細胞培養エキス原液 LP（ヒトカン）定期便"
-      price=5980
-      postage=0
-      shipping_method="ヤマトコンパクト"
-      shipping_method_flag=0
-      point_assignment_flag=1
-      quantity=1
-      redirect_url="https://google.com"></div>
+    <div id="eccube-form" redirect_url="https://google.com" dev="true">
+      <input class="eccube_form_product_info" type="hidden" baitai_code="WEBA000266" product_code="26209842" product_name="ヒト幹細胞培養エキス原液 LP（ヒトカン）定期便" quantity="1" />
+      <input class="eccube_form_product_info" type="hidden" baitai_code="WEBA000301" product_code="73059601" product_name="【WEB限定】プロヘマチン原液 ヒト幹+ 3本分特別セット" quantity="1" />
+      <div id="eccube-form-render"></div>
+    </div>
     
   </body>
 </html>
